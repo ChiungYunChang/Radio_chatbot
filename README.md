@@ -9,11 +9,12 @@ This project is a Music Recommendation Line Bot that provides various functional
 3. Jokes: Users can request jokes for a good laugh.
 4. YouTube Search: The bot can search for YouTube videos based on user input.
 
-
-## Clone the repository.
-1. Install dependencies using pip install -r requirements.txt.
-2. Configure the Line Bot API by providing your channel access token and channel secret in the config.ini file.
-3. Run the Flask application using python app.py.
+## Installation
+To run this project locally, follow these steps:
+1.Clone the repository.
+2. Install dependencies using pip install -r requirements.txt.
+3. Configure the Line Bot API by providing your channel access token and channel secret in the config.ini file.
+4. Run the Flask application using python app.py.
 
 ## Usage
 1. Add the Line Bot to your Line account.
