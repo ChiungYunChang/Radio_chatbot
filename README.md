@@ -9,11 +9,19 @@ This project is a Music Recommendation Line Bot that provides various functional
 3. Jokes: Users can request jokes for a good laugh.
 4. YouTube Search: The bot can search for YouTube videos based on user input.
 
+## File Intro
+1. app.py : (main file) connect to line and combine different services
+2. bert.py: BERT model
+3. crawel_lyrics.py: crawel the lyrics from azlyrics
+4. similarity.py: using cosine similarity to calculate the similarity of two embedding
+5. fine_tunedBert.ipynb: train the model and save the result 
+
+
 ## Installation
 * To run this project locally, follow these steps:
 1. Clone the repository.
 2. Install dependencies using pip install -r requirements.txt.
-3. Configure the Line Bot API by providing your channel access token and channel secret in the config.ini file.
+3. Change the Line Bot API by providing your channel access token and channel secret (app.py).
 4. Run the Flask application using python app.py.
 
 ## Usage
