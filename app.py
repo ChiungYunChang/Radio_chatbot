@@ -20,7 +20,7 @@ config.read('config.ini')
 line_bot_api = LineBotApi(config.get('line-bot', 'channel-access-token'))
 handler = WebhookHandler(config.get('line-bot', 'channel-secret'))
 
-to = "7624c3f4631e86e87d9165c93ce716c5"
+to = ""
 
 @app.route("/callback", methods=['POST'])
 def callback():
@@ -41,8 +41,7 @@ def callback():
     return 'OK'
 
 def GetWeather(station):
-    end_point = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0001-001?Authorization=rdec-key-123-45678-011121314"
-    # end_point ="https://opendata.epa.gov.tw/ws/Data/AQI/?$format=json"
+    end_point = ""
     data = requests.get(end_point).json()
     data = data["records"]["location"]
 
